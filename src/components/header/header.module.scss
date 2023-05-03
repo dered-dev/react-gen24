@@ -1,5 +1,17 @@
 
-header {
+/* header.module.css */
+.header {
+    background-color: red;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    line-height: 100px;
+}
+
+.header.dark {
     background-color: #444;
     color: #fff;
     position: fixed;
@@ -9,12 +21,13 @@ header {
     height: 100px;
     line-height: 100px;
 }
-header ul {
+
+.header ul {
     list-style: none;
     display: flex;
     margin: 0;
 }
-header ul li{
+.header ul li{
     padding: 0 1rem;
     font-weight: 600;
 }

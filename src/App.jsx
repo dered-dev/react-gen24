@@ -5,6 +5,7 @@ import PostContainer from './components/posts/postContainer'
 import PostArticle from './components/posts/postArticle'
 
 import ListUser from './components/users/listUser'
+import ListProducts from './components/products/ListProducts'
 
 function App() {
   // 10 productos
@@ -12,8 +13,20 @@ function App() {
     {
       id:0,
       name:'Jabón',
-      precio: '',
+      precio: '200',
       cantidad: 3
+    },
+    {
+      id:1,
+      name:'Pasta',
+      precio: '100',
+      cantidad: 5
+    },
+    {
+      id:2,
+      name:'Papel',
+      precio: '400',
+      cantidad: 1
     }
   ]
   
@@ -40,20 +53,21 @@ function App() {
     }
   ]
 
-  // const  items =  [
-  //   "Item 1",
-  //   "Item 2"
-  // ]
+  const  items =  [
+    "Item 1",
+    "Item 2"
+  ]
 
   // props
   return (
     <>
-      <ListUser users={usuarios} />
-      {/* <Header 
+      {/* <ListProducts products={productos} /> */}
+      {/* <ListUser users={usuarios} /> */}
+      <Header 
         theme="dark" 
         position="left"
         items={ items }
-      /> */}
+      />
       {/* children */}
       {/* <PostContainer propfake="container__post" >
         <PostArticle title="Title 1" description="Title 1 desc" />
@@ -66,3 +80,4 @@ function App() {
 }
 
 export default App
+
