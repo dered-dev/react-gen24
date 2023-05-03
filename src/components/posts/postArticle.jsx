@@ -2,7 +2,7 @@
 
 
 
-import './post.css'
+// import './post.css'
 //  component
 const PostArticle = ( { title, description } ) => {
     //const { title, description } = props
@@ -10,7 +10,7 @@ const PostArticle = ( { title, description } ) => {
         // React fragment shorthand
         <>
             <div className="post__article">
-                <span>{title}</span>
+                <strong>{title}</strong>
                 <p>{description}</p>
             </div>
         </>

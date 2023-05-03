@@ -1,12 +1,11 @@
-import styles from  './header.module.scss'
+import './header.css'
 //  component
 const Header = (props) => {
-    console.log(props)
     return (
         // React fragment shorthand
         <>
             <header 
-                className={`${ styles.header }`}
+                className='header'
             >
                 <ul>
                     <li> item 1</li>

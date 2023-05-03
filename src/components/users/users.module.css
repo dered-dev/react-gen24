@@ -1,20 +1,23 @@
 
-.post__container{
+
+.list__users{
     background-color: #FFFFFF;
     border-radius: 1rem;
     border: 1px solid silver;
     padding: 2rem;
     text-align: left;
 }
-.post__article{
-    background-color: #FFFFFF;
+
+.user__card__item{
+    background-color: green;
     padding: 1rem 2rem;
     border-radius: 1rem;
     border: 1px solid silver;
     width: 100%;
     margin-bottom: 1rem;
 }
-.post__article strong{
+
+.user__card__item strong{
     font-size: 1.5rem;
     width: 100%;
     display: inline-block;

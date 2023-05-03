@@ -1,13 +1,26 @@
-
+// imports
 import ProductItem from "./Product"
 
+import './listproduct.css'
+
+
+// Componente(s)
 const ListUser = (props) => {
     const products = props.products
-
+    
     return(
         <>
             <h2>Lista de productos</h2>
-            <ol className="list-group list-group-numbered">
+            <ol 
+                className="list-group list-group-numbered list__container"
+                    style={
+                        {
+                            width: "100%",
+                            maxWidth: "600px",
+                            minWidth: "600px"
+                        }
+                    }
+                >
                 {
                     products.map((product)=> {
                         return (
@@ -19,4 +32,5 @@ const ListUser = (props) => {
         </>
     )
 }
+// export
 export default ListUser

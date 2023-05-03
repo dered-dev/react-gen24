@@ -7,6 +7,7 @@ import PostArticle from './components/posts/postArticle'
 import ListUser from './components/users/listUser'
 import ListProducts from './components/products/ListProducts'
 
+
 function App() {
   // 10 productos
   const productos = [
@@ -25,6 +26,12 @@ function App() {
     {
       id:2,
       name:'Papel',
+      precio: '400',
+      cantidad: 1
+    },
+    {
+      id:2,
+      name:'Huevo',
       precio: '400',
       cantidad: 1
     }
@@ -62,16 +69,16 @@ function App() {
   return (
     <>
       {/* <ListProducts products={productos} /> */}
-      {/* <ListUser users={usuarios} /> */}
-      <Header 
+      <ListUser users={usuarios} />
+      {/* <Header 
         theme="dark" 
         position="left"
         items={ items }
-      />
+      /> */}
       {/* children */}
       {/* <PostContainer propfake="container__post" >
-        <PostArticle title="Title 1" description="Title 1 desc" />
-        <PostArticle title="Title 2" description="Title 2 desc" />
+        <PostArticle title="El caballero de la ..." description="El caballero de la ... description" />
+        <PostArticle title="El quijote" description="En algun lugar de la mancha ..." />
         <PostArticle title="Title 3" description="Title 3 desc" />
       </PostContainer> */}
     </>

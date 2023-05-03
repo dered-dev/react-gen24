@@ -1,5 +1,6 @@
 
 import UserItem from "./user"
+import styles from './users.module.css'
 
 const ListUser = (props) => {
     // console.log(props.users)
@@ -9,7 +10,7 @@ const ListUser = (props) => {
     // reduce return
     return(
         <>
-            <div className="list__users">
+            <div className={ styles.list__users }>
                 {
                     users.map((user)=> {
                         return (
