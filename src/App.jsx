@@ -6,7 +6,7 @@ import PostArticle from './components/posts/postArticle'
 
 import ListUser from './components/users/listUser'
 import ListProducts from './components/products/ListProducts'
-
+ import CallToAction from './components/EventsDOM/EventsDom'
 
 function App() {
   // 10 productos
@@ -68,8 +68,9 @@ function App() {
   // props
   return (
     <>
+     < CallToAction /> 
       {/* <ListProducts products={productos} /> */}
-      <ListUser users={usuarios} />
+      {/* <ListUser users={usuarios} /> */}
       {/* <Header 
         theme="dark" 
         position="left"

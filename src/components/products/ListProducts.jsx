@@ -1,7 +1,7 @@
 // imports
 import ProductItem from "./Product"
 
-import './listproduct.css'
+import styles from './listproduct.module.css'
 
 
 // Componente(s)
@@ -12,7 +12,7 @@ const ListUser = (props) => {
         <>
             <h2>Lista de productos</h2>
             <ol 
-                className="list-group list-group-numbered list__container"
+                className={`list-group list-group-numbered ${styles.list__container}`}
                     style={
                         {
                             width: "100%",
