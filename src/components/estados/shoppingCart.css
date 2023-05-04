@@ -1,0 +1,34 @@
+
+.shopping__cart{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+.product__list__item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    align-items:baseline;
+}
+.product__list__item h2{
+    font-size: 1rem;
+    min-width: 220px;
+    text-align: left;
+}
+.product__list__item p{
+    font-size: 1rem;
+    min-width: 220px;
+    text-align: left;
+}
+.product__list__item  button {
+    margin:0 1rem;
+}
+.shopping__cart pre{
+    font-size: 0.75rem;
+    background-color: darkslategray;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: left;
+}

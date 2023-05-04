@@ -26,13 +26,13 @@ const CallToAction = () => {
         // fragment
         <>
             <form 
-                action="/otraurl.php" 
+                action="" 
                 method="POST" 
                 onSubmit={handleSubmit} 
             >
                 <button type="button" onClick={handleClick} >click me!</button>
                 <button type="button" onFocus={handleFocus} >hover me!</button>
-                <button>Submit</button>
+                <button type="button" >Submit</button>
             </form>
         </>
     )
