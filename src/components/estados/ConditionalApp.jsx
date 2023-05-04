@@ -1,20 +1,27 @@
 import React, { useState } from 'react'
 
 const ConditionalApp = () => {
-    const [condition, setCondition] = useState(true);
+    
+    const [condition, setCondition] = useState(true)
+
+    const toggleCondition = () => {
+        setCondition( !condition )
+    }
 
     return (
         <div>
-            <button onClick={() => setCondition(!condition)}>
-                Toggle
-            </button>
-
+            <button onClick={toggleCondition} >Toggle</button>
             {/* {
-                condition &&
-                <h1>Show message only in true</h1>
+                condition == true ?
+                    <h1>Show  message</h1>
+                : 
+                    null
             } */}
-
-            <h1>State value is {condition.toString()} </h1>
+            {
+                condition && <h1>Show  message</h1>
+            }
+            
+            <p>Estado actual : { condition.toString() } </p>
             
         </div>
     )

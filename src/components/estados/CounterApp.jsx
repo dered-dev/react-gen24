@@ -2,13 +2,31 @@
 
 // rafc
 // rafce
+// hook useState()
+//  use -> hook
+import React, { useState } from 'react'
+const CounterApp = () => {
 
-import React from 'react'
+  // [variable, setVariable]
+  // let variable = 'dato'
+  let [counter, setCounter ] = useState(0)
+  // console.log(counter)
 
-const Counter = () => {
+  const handleIncrement = () => {
+    // operaciones
+    // setCounter( counter + 1)
+    setCounter( ( prevStateCounter )  => prevStateCounter + 1 )
+    
+  }
+
   return (
-    <div>Counter</div>
+    <>
+      <button onClick={handleIncrement} >
+        Incrementar
+      </button>
+      <h1>Clicks: {counter} </h1>
+    </>
   )
 }
 
-export default Counter
+export default CounterApp
